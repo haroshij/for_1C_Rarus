@@ -25,7 +25,7 @@ def filling(lst: list[int]) -> single_linked:
     root = single_linked(lst[0])  # Сохраняем первый элемент как корневой (для возврата).
     cur_el = root
 
-    # Формируем одностороннюю связь между элементами
+    # Формируем одностороннюю связь между элементами.
     for el in lst[1:]:
         cur_el.next = single_linked(el)
         cur_el = cur_el.next
